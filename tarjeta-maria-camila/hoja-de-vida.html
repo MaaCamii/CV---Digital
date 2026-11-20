@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hoja de vida · María Camila Chala Mena</title>
+<meta name="description" content="Hoja de vida de María Camila Chala Mena: abogada especialista en Gerencia de Proyectos, consultora en Educación, Innovación Social y Política Pública.">
+<meta name="theme-color" content="#FBF1E6">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Hoja de vida · María Camila Chala Mena">
+<meta property="og:description" content="Trayectoria, formación y publicaciones.">
+<meta property="og:url" content="https://cv-maacamii.vercel.app/hoja-de-vida.html">
+<meta property="og:image" content="https://cv-maacamii.vercel.app/assets/og-tarjeta-digital.jpg">
+<meta property="og:image:secure_url" content="https://cv-maacamii.vercel.app/assets/og-tarjeta-digital.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="María Camila Chala Mena · Tarjeta de contacto">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilos.css">
+<style>
+  .wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  /* Barra superior */
+  .top{position:sticky;top:0;z-index:5;background:rgba(251,241,230,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:56px}
+  .volver{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:500;color:var(--cafe);padding:7px 12px 7px 8px;border-radius:10px;border:1px solid var(--linea);background:var(--blanco)}
+  .volver svg{width:16px;height:16px}
+  .wa-mini{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:12.5px;font-weight:600;color:var(--cafe);background:var(--blanco);border:1px solid var(--linea);padding:7px 12px;border-radius:10px}
+  .wa-mini svg{width:15px;height:15px;color:var(--wa)}
+
+  /* Encabezado */
+  .hero{margin-top:22px;padding:20px;background:rgba(255,253,250,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--linea);border-radius:20px;box-shadow:var(--sombra)}
+  .hero-top{display:flex;align-items:center;gap:14px}
+  .avatar{width:64px;height:64px;border-radius:18px;object-fit:cover;flex:none;border:1px solid var(--linea)}
+  .hero h1{margin:2px 0 0;font-size:22px;line-height:1.2;letter-spacing:-.01em;color:var(--tinta)}
+  .hero h1 .logo{display:block;width:100%;max-width:230px;height:auto;margin-top:4px}
+  .hero h1 .n1{display:block;font-family:"Allura","Brush Script MT",cursive;font-weight:400;font-size:44px;line-height:1;color:var(--cafe)}
+  .hero h1 .n2{display:block;font-weight:400;font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--tinta);margin-top:2px}
+  .sintesis{margin:16px 0 0;font-size:14.5px;line-height:1.65;color:var(--texto)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0;padding:0;list-style:none}
+  .chips li{font-size:12px;font-weight:500;color:var(--cafe);background:var(--crema);border:1px solid var(--linea);border-radius:8px;padding:4px 10px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);margin:16px 0 0;border:1px solid var(--linea);border-radius:14px;overflow:hidden}
+  .stat{padding:12px 8px;text-align:center;background:var(--crema)}
+  .stat+.stat{border-left:1px solid var(--linea)}
+  .stat b{display:block;font-size:22px;font-weight:700;color:var(--cafe);line-height:1.1;font-variant-numeric:tabular-nums}
+  .stat span{display:block;font-size:11px;line-height:1.3;color:var(--suave);margin-top:3px}
+
+  /* Actualmente */
+  .hoy{margin:12px 0 0;background:var(--blanco);border:1px solid var(--linea);border-radius:16px;padding:16px 18px}
+  .hoy h2{margin:0 0 10px}
+  .hoy ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .hoy li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45}
+  .hoy li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--vigente);margin-top:7px;box-shadow:0 0 0 3px var(--vigente-bg)}
+  .hoy b{color:var(--tinta);font-weight:600}
+
+  /* Bloques desplegables */
+  .indicacion{display:flex;align-items:center;gap:10px;margin:26px 2px 10px}
+  .indicacion::after{content:"";flex:1;height:1px;background:var(--linea)}
+  .bloques{display:grid;gap:8px}
+  details{background:var(--blanco);border:1px solid var(--linea);border-radius:16px;overflow:hidden;scroll-margin-top:66px;transition:border-color .15s ease,box-shadow .15s ease}
+  details:hover{border-color:var(--durazno)}
+  details[open]{border-color:var(--oro);box-shadow:var(--sombra)}
+  summary{list-style:none;display:flex;align-items:center;gap:12px;padding:13px 14px;cursor:pointer;user-select:none}
+  summary::-webkit-details-marker{display:none}
+  summary .ic{flex:none;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:var(--arena);color:var(--cafe)}
+  summary .ic svg{width:19px;height:19px}
+  summary .tx{flex:1;min-width:0}
+  summary b{display:block;color:var(--tinta);font-size:15px;font-weight:600;line-height:1.3}
+  summary .teaser{display:block;font-size:12px;color:var(--suave);line-height:1.4;margin-top:1px}
+  summary .chev{flex:none;width:28px;height:28px;border-radius:8px;display:grid;place-items:center;color:var(--cafe);background:var(--crema);transition:transform .2s ease}
+  details[open] summary .chev{transform:rotate(180deg)}
+  .cuerpo{padding:4px 16px 18px;border-top:1px solid var(--linea-suave)}
+
+  .destacado{margin:14px 0 16px;background:var(--crema);border:1px solid var(--linea);border-radius:14px;padding:14px 16px}
+  .destacado h3{margin:6px 0 2px;font-size:16px;color:var(--tinta)}
+  .destacado p{margin:8px 0 0;font-size:14px}
+  .destacado a:not(.agora){color:var(--cafe);font-weight:500}
+
+  .linea{list-style:none;margin:14px 0 0;padding:0;position:relative}
+  .linea::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--linea)}
+  .linea li{position:relative;padding:0 0 16px 26px}
+  .linea li:last-child{padding-bottom:0}
+  .linea li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:var(--blanco);border:2px solid var(--durazno)}
+  .linea li.vigente::before{border-color:var(--cafe);background:var(--cafe);box-shadow:0 0 0 3px var(--arena)}
+  .linea h3{margin:0;font-size:14.5px;color:var(--tinta);font-weight:600;line-height:1.4}
+  .linea .cargo{margin:2px 0 3px;font-size:13.5px;line-height:1.5}
+
+  .edu{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--linea-suave)}
+  .edu:last-child{border-bottom:0;padding-bottom:0}
+  .edu .anio{flex:none;font-weight:600;font-size:12px;color:var(--cafe);background:var(--arena);border-radius:8px;padding:4px 8px;min-width:48px;text-align:center;font-variant-numeric:tabular-nums}
+  .edu h3{margin:0;font-size:14.5px;color:var(--tinta);font-weight:600;line-height:1.4}
+
+  .filtros{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 10px}
+  .filtros button{font:500 12px "Poppins",sans-serif;border:1px solid var(--linea);background:var(--blanco);color:var(--texto);padding:5px 10px;border-radius:8px;cursor:pointer}
+  .filtros button[aria-pressed="true"]{background:var(--cafe);color:#fff;border-color:var(--cafe)}
+  .filtros small{opacity:.7;margin-left:3px}
+  .cursos{list-style:none;margin:0;padding:0}
+  .cursos li{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--linea-suave)}
+  .cursos li:last-child{border-bottom:0}
+  .cursos .n{font-size:13.5px;color:var(--tinta);line-height:1.45}
+  .cursos .i{font-size:12px;color:var(--suave);display:block}
+  .cursos .a{flex:none;font-size:12px;font-weight:600;color:var(--cafe);font-variant-numeric:tabular-nums}
+  .nuevo{font-size:9.5px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--oro);border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+  .mas{margin:10px 0 0;background:var(--blanco);border:1px solid var(--linea);color:var(--cafe);font:500 12.5px "Poppins",sans-serif;padding:8px 14px;border-radius:10px;cursor:pointer}
+
+  .pubs{display:grid;gap:8px;margin-top:14px}
+  .pub{display:flex;align-items:center;gap:12px;text-decoration:none;background:var(--crema);border:1px solid var(--linea);border-radius:12px;padding:10px 12px;transition:border-color .15s ease}
+  .pub:hover{border-color:var(--oro)}
+  .pub .ic{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--blanco);color:var(--cafe)}
+  .pub .ic svg{width:17px;height:17px}
+  .pub b{display:block;color:var(--tinta);font-weight:600;font-size:14px}
+  .pub span{font-size:12px;color:var(--suave)}
+  .pub .flecha{margin-left:auto;color:var(--oro)}
+
+  .idi{display:grid;grid-template-columns:76px 1fr auto;gap:12px;align-items:center;font-size:14px;margin-top:12px}
+  .barra{height:6px;border-radius:99px;background:var(--arena);overflow:hidden}
+  .barra i{display:block;height:100%;background:linear-gradient(90deg,var(--oro),var(--cafe));border-radius:99px}
+
+  /* Cierre */
+  .contacto{margin:30px 0 0;padding:30px 0 40px;background:var(--tinta);color:#EADBC9}
+  .contacto .etq{color:var(--durazno)}
+  .contacto h2{margin:6px 0 4px;font-size:22px;font-weight:600;color:#fff;letter-spacing:-.01em}
+  .contacto p{margin:0 0 16px;font-size:14px;opacity:.8}
+  .contacto .acciones{display:grid;gap:10px;max-width:440px}
+  .contacto .tile{background:#3A2D23;border-color:#4C3B2E}
+  .contacto .tile b{color:#F6EBDD}
+  .contacto .tile small{color:#BFAE9C}
+  .contacto .t-ic{background:#4C3B2E;color:var(--durazno)}
+  .contacto .t-ic.wa{background:#24412F;color:#7FD3A2}
+  .contacto .cta{background:linear-gradient(135deg,var(--durazno),var(--oro));color:var(--tinta)}
+  .contacto .cta-ic{background:rgba(43,32,24,.08);border-color:rgba(43,32,24,.12)}
+  .contacto small.copy{display:block;margin-top:20px;opacity:.5;font-size:12px}
+  .etq{font-size:10.5px}
+  @media print{ .top,.contacto .acciones,.filtros,.mas,.indicacion{display:none!important} details{border:0} .cuerpo{border:0} }
+</style>
+</head>
+<body class="fondo">
+
+<header class="top">
+  <div class="wrap">
+    <a class="volver" href="./"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Tarjeta</a>
+    <a class="wa-mini" id="wa-top" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="hero-top">
+      <img class="avatar" src="assets/avatar.jpg" alt="" width="64" height="64">
+      <div><span class="etq">Hoja de vida</span>
+        <h1><img class="logo" src="assets/logo-nombre.png" alt="María Camila Chala Mena" width="900" height="229"></h1></div>
+    </div>
+    <p class="sintesis" id="sintesis"></p>
+    <ul class="chips" id="enfoques"></ul>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="hoy" aria-labelledby="hoy-t">
+    <h2 id="hoy-t" class="etq"><span class="punto" aria-hidden="true"></span>Actualmente</h2>
+    <ul id="hoy"></ul>
+  </section>
+
+  <p class="indicacion etq">Trayectoria</p>
+  <div class="bloques" id="bloques"></div>
+</main>
+
+<footer class="contacto">
+  <div class="wrap">
+    <span class="etq">Contacto</span>
+    <h2>Conversemos</h2>
+    <p>¿Te interesa mi perfil? Agenda una llamada o escríbeme por el canal que prefieras.</p>
+    <div class="acciones" id="acciones"></div>
+    <small class="copy">© <span id="anio"></span> María Camila Chala Mena</small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="datos.js"></script>
+<script src="comun.js"></script>
+<script>
+(function(){
+  const { D, esc, ICON, waURL, botonesContacto } = window.UI;
+  const $ = s => document.querySelector(s);
+  const AHORA = 'Actualidad';
+  const anioActual = new Date().getFullYear();
+
+  // Encabezado
+  $('#sintesis').innerHTML = window.UI.agora(esc(D.sintesis));
+  $('#enfoques').innerHTML = D.enfoques.map(e => `<li>${esc(e)}</li>`).join('');
+  $('#wa-top').href = waURL;
+  $('#wa-top').innerHTML = ICON.wa + 'WhatsApp';
+  const cursos = [...D.formacionContinua].sort((a,b) => b.anio - a.anio);
+  const cargos = D.experiencia.length + 1; // + Ágora
+  $('#stats').innerHTML = [
+    [anioActual - D.inicioTrayectoria + '', 'años de trayectoria'],
+    [cargos, 'cargos y consultorías'],
+    [cursos.length, 'cursos y diplomados'],
+  ].map(([n,t]) => `<div class="stat"><b>${n}</b><span>${t}</span></div>`).join('');
+
+  // Actualmente
+  const vigentes = [{ cargo: D.direccion.cargo.split('·')[0].trim(), org: D.direccion.organizacion }]
+    .concat(D.experiencia.filter(x => x.fin === AHORA).map(x => ({ cargo: x.cargo.split('—')[0].trim(), org: x.org })));
+  $('#hoy').innerHTML = vigentes.map(v => `<li><span><b>${esc(v.cargo)}</b> · ${window.UI.agora(esc(v.org))}</span></li>`).join('');
+
+  // Contenidos de cada bloque
+  const fecha = x => `${x.lugar ? esc(x.lugar) + ' · ' : ''}${esc(x.inicio)} – ${esc(x.fin)}`;
+  function linea(items){
+    return `<ul class="linea">${items.map(x => `<li class="${x.fin===AHORA?'vigente':''}">
+      <h3>${esc(x.org)}</h3><p class="cargo">${esc(x.cargo)}</p>
+      <div class="meta">${fecha(x)} ${x.fin===AHORA?'<span class="badge on">Vigente</span>':''}</div></li>`).join('')}</ul>`;
+  }
+  const d = D.direccion;
+  const htmlExperiencia = `<div class="destacado"><span class="badge on">${esc(d.fin)}</span>
+      <h3>${window.UI.agora(esc(d.organizacion))}</h3>
+      <div class="meta">${esc(d.cargo)} · ${esc(d.inicio)} – ${esc(d.fin)}</div>
+      ${d.descripcion.map(t => `<p>${esc(t)}</p>`).join('')}
+      <p><a href="mailto:${d.correo}">${esc(d.correo)}</a></p></div>` + linea(D.experiencia);
+
+  const htmlEducacion = D.educacion.map(e => `<div class="edu"><span class="anio">${e.anio}</span>
+      <div><h3>${esc(e.titulo)}</h3><div class="meta">${esc(e.institucion)}</div></div></div>`).join('');
+
+  const areasConCursos = Object.entries(D.areas).filter(([k]) => cursos.some(x => x.area === k));
+  const htmlFormacion = `<div class="filtros" id="filtros" role="group" aria-label="Filtrar por área"></div>
+      <ul class="cursos" id="cursos"></ul><button type="button" class="mas" id="vertodos" hidden></button>`;
+
+  const htmlPublicaciones = `<div class="pubs">${D.publicaciones.map(p => `<a class="pub" href="${p.url}" target="_blank" rel="noopener">
+      <span class="ic">${p.tipo.startsWith('Podcast') ? ICON.mic : ICON.pluma}</span>
+      <span><b>${esc(p.titulo)}</b><span>${esc(p.tipo)} · ${esc(p.medio)}</span></span><span class="flecha">↗</span></a>`).join('')}</div>`;
+
+  const htmlIdiomas = D.idiomas.map(i => `<div class="idi"><span>${esc(i.idioma)}</span>
+      <span class="barra" role="img" aria-label="${esc(i.idioma)}: ${i.nivel}%"><i style="width:${i.nivel}%"></i></span>
+      <span class="meta">${esc(i.etiqueta || '')}</span></div>`).join('');
+
+  const nCol = D.publicaciones.filter(p => !p.tipo.startsWith('Podcast')).length;
+  const nPod = D.publicaciones.length - nCol;
+  const ultimo = D.educacion[0];
+  const bloques = [
+    { id:'experiencia', ic:ICON.maletin, t:'Experiencia profesional', s:`${cargos} cargos · desde ${D.experiencia.at(-1).inicio.split(' ').pop()}`, h:htmlExperiencia },
+    { id:'educacion', ic:ICON.birrete, t:'Educación', s:'Abogada · Especialista en Gerencia de Proyectos', h:htmlEducacion },
+    { id:'formacion', ic:ICON.medalla, t:'Formación continua', s:`${cursos.length} cursos y diplomados · ${areasConCursos.length} áreas`, h:htmlFormacion },
+    { id:'procesos', ic:ICON.manos, t:'Procesos sociales', s:`${D.procesosSociales.length} procesos de liderazgo juvenil y ciudadano`, h:linea(D.procesosSociales) },
+    { id:'publicaciones', ic:ICON.pluma, t:'Columnas y podcasts', s:`${nCol} perfiles de columna · ${nPod} podcasts`, h:htmlPublicaciones },
+    { id:'idiomas', ic:ICON.globo, t:'Idiomas', s:D.idiomas.map(i => i.idioma).join(' · '), h:htmlIdiomas },
+  ];
+  $('#bloques').innerHTML = bloques.map(b => `<details id="${b.id}">
+      <summary><span class="ic">${b.ic}</span><span class="tx"><b>${b.t}</b><span class="teaser">${esc(b.s)}</span></span>
+      <span class="chev"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+      <div class="cuerpo">${b.h}</div></details>`).join('');
+
+  // Formación continua: filtros y lista
+  let filtro = 'todas', verTodos = false;
+  const maxAnio = cursos.length ? cursos[0].anio : 0;
+  function pintarFiltros(){
+    const opciones = [['todas','Todas',cursos.length], ...areasConCursos.map(([k,v]) => [k, v, cursos.filter(x => x.area===k).length])];
+    $('#filtros').innerHTML = opciones.map(([k,v,n]) => `<button type="button" data-k="${k}" aria-pressed="${k===filtro}">${esc(v)}<small>${n}</small></button>`).join('');
+  }
+  function pintarCursos(){
+    const todos = cursos.filter(x => filtro==='todas' || x.area===filtro);
+    const lista = (verTodos || todos.length <= 10) ? todos : todos.slice(0, 8);
+    $('#cursos').innerHTML = lista.map(x => `<li><div><span class="n">${esc(x.nombre)}${x.anio===maxAnio?'<span class="nuevo">NUEVO</span>':''}</span>
+      <span class="i">${esc(x.institucion)}</span></div><span class="a">${x.anio}</span></li>`).join('');
+    const b = $('#vertodos'); b.hidden = lista.length === todos.length; b.textContent = `Ver los ${todos.length} cursos`;
+  }
+  $('#filtros').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; filtro = b.dataset.k; pintarFiltros(); pintarCursos(); });
+  $('#vertodos').addEventListener('click', () => { verTodos = true; pintarCursos(); });
+  pintarFiltros(); pintarCursos();
+
+  // Abrir un bloque si el enlace trae #seccion (p. ej. hoja-de-vida.html#formacion)
+  function abrirDesdeHash(){
+    const el = location.hash && document.getElementById(location.hash.slice(1));
+    if (el && el.tagName === 'DETAILS'){ el.open = true; el.scrollIntoView({ block:'start' }); }
+  }
+  window.addEventListener('hashchange', abrirDesdeHash); abrirDesdeHash();
+
+  $('#acciones').innerHTML = botonesContacto();
+  $('#anio').textContent = anioActual;
+})();
+</script>
+</body>
+</html>
